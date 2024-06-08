@@ -1,4 +1,4 @@
-# BIT QR Code Portal Laravel Backend
+# QR Code Portal Laravel Backend
 
 ## Building
 
@@ -25,7 +25,7 @@ CREATE EXTENSION IF NOT EXISTS citext;
 ### Install application dependencies and DB migration
 
 ```sh
-git clone ssh://git@git.bitsathy.ac.in:2222/ITSoftwareDev/qr-code-feedback.git
+git clone git@github.com:Madhan-Prasath/qr-code-feedback.git
 cd qr-code-feedback
 cp .env.example .env
 composer install
@@ -35,7 +35,7 @@ php artisan db:seed
 php artisan storage:link
 php artisan serve
 
-# Access Portal at https://feedback.bitsathy.ac.in/admin
+# Access Portal at http://127.0.0.1:8000/admin
 ```
 
 ## Running in production
@@ -52,7 +52,7 @@ Create a Postgres database and user as required. See development DB creation ste
 
 ```sh
 cd /var/www
-git clone ssh://git@git.bitsathy.ac.in:2222/ITSoftwareDev/qr-code-feedback.git
+git clone git@github.com:Madhan-Prasath/qr-code-feedback.git
 cd html
 
 chown -Rh www-data storage/framework
